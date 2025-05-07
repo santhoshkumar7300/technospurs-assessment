@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  h1 {
+    @apply font-bold text-4xl text-gray-900;
+  }
+  h2 {
+    @apply font-semibold text-3xl text-gray-800;
+  }
+  h3 {
+    @apply font-medium text-2xl text-gray-700;
+  }
+  h4 {
+    @apply font-normal text-xl text-gray-600;
+  }
+  h5 {
+    @apply font-normal text-lg text-gray-500;
+  }
+  h6 {
+    @apply font-normal text-base text-gray-400;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-primary-color);
+}
+
+:root {
+  --fontRegular: "font-regular";
+  --fontSemibold: "font-semi-bold";
+  --fontMedium: "font-medium";
+  --fontBold: "font-bold";
+  --light-white: #fbfbfb;
+  --white-color: #fff;
+  --black-color: #000;
+  --medium-primary-color: #5b7fc0;
+  --primary-color: #375f9c;
+  --dark-primary-color: #2c4773;
+  --light-primary-color: #e5edf8;
+  --secondary-color: #d7001f;
+  --error-text-color: #ee4238;
+  --table-header-title-color: #fff;
+  --table-header-subtitle-color: #ffffffcc;
+  --template-palette-background-default: hsl(0, 0%, 99%);
+  --guest-color: #009d0a;
+  --contractor-color: #fc9500;
+  --alemployee-color: #1772ff;
+  --invited-color: #3e78ff;
+  --visited-color: #c95141;
+  --onsite-color: #64a65e;
+  --dark-blue: hsl(220, 30%, 6%);
+  --dim-color: rgba(0, 0, 0, 0.7);
+  --textXs: 14px;
+  --textSm: 16px;
+  --textMd: 20px;
+  --textLg: 24px;
+  --textXl: 26px;
+}
+
+@font-face {
+  font-family: "font-bold";
+  src: url("./assets/fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "font-medium";
+  src: url("./assets/fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "font-regular";
+  src: url("./assets/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "font-semi-bold";
+  src: url("./assets/fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+body {
+  font-family: var(--fontRegular);
+  background-color: var(--light-white);
+}
